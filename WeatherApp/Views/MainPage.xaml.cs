@@ -7,11 +7,13 @@
         public MainPage()
         {
             InitializeComponent();
+            entry.Text = "Portland";
         }
 
         public void CityButton_Clicked(object sender, EventArgs e)
         {
-            return;
+            string city = entry.Text;
+            cityTxt.Text = city.ToString();
         }
     }
 
